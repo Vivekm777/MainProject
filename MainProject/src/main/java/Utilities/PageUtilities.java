@@ -100,7 +100,7 @@ public static void  refreshpage(WebDriver driver)
 public static void clickOnWebElement(WebDriver driver ,WebElement element)
 {
 	JavascriptExecutor executor=(JavascriptExecutor)driver;
-	executor.executeScript("arguments[0].click",element );
+	executor.executeScript("arguments[0].click()",element );
 	
 	
 }
@@ -157,7 +157,7 @@ public static String getText(WebElement element)
 	
 }
 
-public static void ArrowDownKey(WebDriver driver)
+public static void ArrowDownKeypress(WebDriver driver)
 {
 	Actions action=new Actions(driver);
 	action.sendKeys(Keys.ARROW_DOWN);
@@ -166,7 +166,7 @@ public static void ArrowDownKey(WebDriver driver)
 	
 }
 
-public static void ArrowUpKey(WebDriver driver)
+public static void ArrowUpKeypress(WebDriver driver)
 {
 	Actions action=new Actions(driver);
 	action.sendKeys(Keys.ARROW_UP);
@@ -175,7 +175,7 @@ public static void ArrowUpKey(WebDriver driver)
 	
 }
 
-public static void ArrowRightKey(WebDriver driver)
+public static void ArrowRightKeypress(WebDriver driver)
 {
 	Actions action=new Actions(driver);
 	action.sendKeys(Keys.ARROW_RIGHT);
@@ -184,7 +184,7 @@ public static void ArrowRightKey(WebDriver driver)
 	
 }
 
-public static void ArrowLeftKey(WebDriver driver)
+public static void ArrowLeftKeypress(WebDriver driver)
 {
 	Actions action=new Actions(driver);
 	action.sendKeys(Keys.ARROW_LEFT);
@@ -194,7 +194,7 @@ public static void ArrowLeftKey(WebDriver driver)
 }
 
 
-public static void BackspaceKey(WebDriver driver)
+public static void BackspaceKeypress(WebDriver driver)
 {
 	Actions action=new Actions(driver);
 	action.sendKeys(Keys.BACK_SPACE);
@@ -202,7 +202,7 @@ public static void BackspaceKey(WebDriver driver)
 	
 	
 }
-public static void ShiftKey(WebDriver driver)
+public static void ShiftKeypress(WebDriver driver)
 {
 	Actions action=new Actions(driver);
 	action.sendKeys(Keys.SHIFT);
